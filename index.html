@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Home Page</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">MySite</a>
+      <nav class="nav">
+        <a href="#" class="nav-link">Home</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="btn">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Welcome to MySite</h1>
+        <p>A super simple, responsive homepage using plain HTML and external CSS.</p>
+        <div class="actions">
+          <a href="#features" class="btn">Explore Features</a>
+          <a href="#about" class="btn btn-outline">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="container grid-3">
+        <article class="card">
+          <h3>Fast</h3>
+          <p>Lightweight markup and minimal styles for quick load times.</p>
+        </article>
+        <article class="card">
+          <h3>Responsive</h3>
+          <p>Looks good on phones, tablets, and desktops without extra fuss.</p>
+        </article>
+        <article class="card">
+          <h3>Accessible</h3>
+          <p>Semantic HTML with clear contrast and focus styles.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2>About</h2>
+        <p>
+          This is a starter template you can extend. Add sections, images, and components as you need.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <form class="contact-form" action="#" method="post">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" required>
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" placeholder="How can we help?" required></textarea>
+          </label>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> MySite. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script>
+    // set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
